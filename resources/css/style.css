@@ -16,7 +16,7 @@
 /* Mobile Layout */
 
 body {
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-family: "Kumbh Sans", sans-serif;
 	background-color: var(--dark-cyan);
 	position: relative;
@@ -26,31 +26,32 @@ body {
 	background-size: cover;
 	background-image: url(../images/bg-pattern-top.svg),
 		url(../images/bg-pattern-bottom.svg);
-	background-position: -450px -400px, 175px 335px;
+	background-position: -28.125rem -25rem, 10.9375rem 20.9375rem;
 	background-repeat: no-repeat, no-repeat;
 }
 
 .container {
 	background-color: #fff;
-	width: 325px;
-	border-radius: 15px;
+	width: 20.3125rem;
+	border-radius: 1rem;
 	position: relative;
 	background-image: url(../images/bg-pattern-card.svg);
 	background-position: top;
 	background-repeat: repeat-x;
-	box-shadow: 5px 5px 15px rgba(12, 7, 7, 0.1);
+	box-shadow: 0.25rem 0.25rem 1rem rgba(12, 7, 7, 0.3);
 }
 
 .avatar-img {
-	border-radius: 50%;
 	position: absolute;
-	top: 85px;
-	left: 109.5px;
+	border-radius: 50%;
 	border: 5px solid #fff;
+	top: 5.5rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .person-info {
-	margin-top: 220px;
+	margin-top: 13.75rem;
 	text-align: center;
 }
 
@@ -61,22 +62,22 @@ body {
 .first-section span {
 	font-weight: normal;
 	color: var(--dark-grayish-blue);
-	font-size: 18px;
-	margin-left: 10px;
+	font-size: 1.125rem;
+	margin-left: 0.625rem;
 }
 
 .first-section p {
 	color: var(--dark-grayish-blue);
-	font-size: 16px;
-	margin: 15px 0 15px 0;
-	padding-bottom: 25px;
-	border-bottom: 1px solid rgba(164, 164, 160, 0.25);
+	font-size: 1rem;
+	margin: 1rem 0;
+	padding-bottom: 1.5rem;
+	border-bottom: 0.0625rem solid rgba(164, 164, 160, 0.25);
 }
 
 ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	margin: 30px auto;
+	margin: 2rem auto;
 	width: 80%;
 	list-style-type: none;
 }
@@ -88,36 +89,36 @@ ul {
 }
 
 .secondary {
-	font-size: 13px;
+	font-size: 0.75rem;
 	color: var(--dark-grayish-blue);
-	letter-spacing: 2px;
+	letter-spacing: 0.0625rem;
 }
 
-/* Mobile Layout with width below 375px */
+/* Mobile Layout (320w)*/
 
-@media (max-width: 374px) {
+@media (max-width: 23.125rem) {
 	.container {
-		width: 280px;
-	}
-
-	.avatar-img {
-		left: 87px;
+		width: 17.5rem;
 	}
 }
 
-/* Desktop Layout */
+/* Desktop Layout (1024w) */
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
 	body {
-		background-position: -275px -500px, 700px 350px;
+		background-position: -17.1875rem -31.25rem, 43.75rem 21.875rem;
 		background-size: auto;
 	}
 
 	.container {
-		width: 350px;
+		width: 21.875rem;
 	}
+}
 
-	.avatar-img {
-		left: 122px;
+/* Desktop Layout (1600w) */
+
+@media (min-width: 100rem) {
+	body {
+		background-position: -17.1875rem -31.25rem, 75rem 30rem;
 	}
 }
