@@ -13,7 +13,7 @@
 	--dark-gray: hsl(0, 0%, 59%);
 }
 
-/* Mobile Version */
+/* Mobile Layout */
 
 body {
 	font-size: 18px;
@@ -93,7 +93,7 @@ ul {
 	letter-spacing: 2px;
 }
 
-/* Mobile with width below 375px */
+/* Mobile Layout with width below 375px */
 
 @media (max-width: 374px) {
 	.container {
@@ -105,7 +105,7 @@ ul {
 	}
 }
 
-/* Desktop Version */
+/* Desktop Layout */
 
 @media (min-width: 1024px) {
 	body {
