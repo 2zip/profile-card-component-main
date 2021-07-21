@@ -21,30 +21,36 @@
 /* Mobile Layout */
 
 body {
-	position: relative;
-	display: grid;
-	place-items: center;
 	min-height: 100vh;
 	font-size: 1.125rem;
 	background-color: var(--dark-cyan);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-height: 100vh;
 	z-index: -1;
 	overflow: hidden;
 }
 
-body::before {
+main::before {
 	top: 0;
 	left: 0;
 	background: url(../images/bg-pattern-top.svg) bottom right;
 }
 
-body::after {
+main::after {
 	top: 100%;
 	left: 100%;
 	background: url(../images/bg-pattern-bottom.svg) top left;
 }
 
-body::before,
-body::after {
+main::before,
+main::after {
 	position: absolute;
 	content: "";
 	width: 100vw;
@@ -57,12 +63,12 @@ body::after {
 .container {
 	position: relative;
 	width: 20.3125rem;
-	margin: 2rem auto;
+	margin: 3.5rem auto;
 	background-color: #fff;
 	border-radius: 1rem;
 	background-image: url(../images/bg-pattern-card.svg);
 	background-position: top;
-	background-repeat: repeat-x;
+	background-repeat: no-repeat;
 	box-shadow: 0.25rem 0.25rem 1rem rgba(12, 7, 7, 0.3);
 }
 
@@ -137,9 +143,9 @@ ul {
 	text-decoration: underline;
 }
 
-/* Mobile Layout (320w)*/
+/* Mobile Layout (350w)*/
 
-@media (max-width: 23.125rem) {
+@media (max-width: 21.875rem) {
 	.container {
 		width: 16.5rem;
 	}
